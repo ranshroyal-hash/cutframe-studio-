@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CutFrame Studios | Live 3D Video Editing Agency</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --teal:#00d4aa;--teal2:#00ffcc;--black:#040406;--text:#f2f6ff;--muted:#b9c3d4;
+  --border:rgba(0,212,170,.18);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--black);color:var(--text);overflow-x:hidden;min-height:100vh;cursor:none}
+body::before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(circle at 70% 20%,rgba(0,212,170,.14),transparent 35%),radial-gradient(circle at 15% 80%,rgba(0,212,170,.09),transparent 30%),linear-gradient(180deg,rgba(4,4,6,.42),rgba(4,4,6,.94));pointer-events:none}
+#bg-canvas{position:fixed;inset:0;z-index:-5;pointer-events:none}
+.depth-stage{position:fixed;inset:0;z-index:-4;pointer-events:none;overflow:hidden;perspective:1400px;opacity:.75}
+.depth-vignette{position:fixed;inset:0;z-index:-3;pointer-events:none;background:linear-gradient(90deg,rgba(4,4,6,.88),transparent 25%,transparent 72%,rgba(4,4,6,.8)),linear-gradient(180deg,rgba(4,4,6,.16),transparent 35%,rgba(4,4,6,.78))}
+.cursor,.cursor-ring{position:fixed;pointer-events:none;z-index:9999}
+.cursor{width:9px;height:9px;border-radius:50%;background:var(--teal);box-shadow:0 0 18px rgba(0,212,170,.95)}
+.cursor-ring{width:42px;height:42px;border:1px solid rgba(0,212,170,.55);border-radius:50%;z-index:9998;transition:transform .18s ease,border-color .18s ease,background .18s ease}
+nav,header,section,footer{position:relative;z-index:5}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:20px 58px;background:rgba(4,4,6,.58);backdrop-filter:blur(22px);border-bottom:1px solid rgba(0,212,170,.13)}
+.nav-logo,.footer-logo{font-fa...
